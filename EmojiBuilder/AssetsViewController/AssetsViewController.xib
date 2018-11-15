@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AssetsViewController" customModule="EmojiBuilder" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="vmf-BG-duQ" id="M4u-zO-wtn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nhf-GR-rqa">
+                    <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aa1-tg-Emn">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <state key="normal" title="Cancel"/>
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="-1" eventType="touchUpInside" id="gnK-Gs-0eQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Aa1-tg-Emn" firstAttribute="top" secondItem="nhf-GR-rqa" secondAttribute="top" id="0ua-YJ-Qyk"/>
+                        <constraint firstAttribute="height" constant="80" id="f6Q-5V-ao1"/>
+                        <constraint firstItem="Aa1-tg-Emn" firstAttribute="leading" secondItem="nhf-GR-rqa" secondAttribute="leading" id="gRo-SE-b7c"/>
+                        <constraint firstAttribute="bottom" secondItem="Aa1-tg-Emn" secondAttribute="bottom" id="uJe-sa-c4E"/>
+                        <constraint firstAttribute="trailing" secondItem="Aa1-tg-Emn" secondAttribute="trailing" id="zLc-aM-W4R"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vmf-BG-duQ">
+                    <rect key="frame" x="0.0" y="20" width="375" height="567"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5PB-EX-1zX">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vmf-BG-duQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="DKt-EJ-Pkg"/>
+                <constraint firstItem="nhf-GR-rqa" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="EaO-qh-22t"/>
+                <constraint firstItem="vmf-BG-duQ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="GiX-jZ-xJr"/>
+                <constraint firstItem="vmf-BG-duQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="H2t-5d-adi"/>
+                <constraint firstItem="nhf-GR-rqa" firstAttribute="top" secondItem="vmf-BG-duQ" secondAttribute="bottom" id="RiF-33-Phc"/>
+                <constraint firstItem="nhf-GR-rqa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="c0Y-lg-Fbt"/>
+                <constraint firstItem="nhf-GR-rqa" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="jXP-Fa-ada"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="40.799999999999997" y="46.326836581709152"/>
+        </view>
+    </objects>
+</document>
